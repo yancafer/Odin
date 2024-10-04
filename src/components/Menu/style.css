@@ -1,0 +1,57 @@
+/* Container para centralizar e alinhar os itens 
+- display: flex; - para alinhar os itens
+- flex-direction: row; - para alinhar os itens em linha
+- align-items: center; - para alinhar os itens no centro
+- justify-content: space-between; - para alinhar os itens no espaço entre eles
+- box-shadow: - sombra no container
+- padding: 1.1rem; - espaçamento interno do container 
+*/
+
+.container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 1.1rem ;
+}
+
+/**/
+
+/*Container de navegação para alinhar os itens*/
+.nav-container {
+    display: flex;
+    flex-direction: row;
+}
+
+/*Estilização das logos no menu*/
+.logo-sejusp {
+    width: 18rem;
+}
+
+.logo-dirjusp {
+    width: 18rem;
+}
+
+/*Estilização da fonte na navegação*/
+.nav-font {
+    font-size: 1.5rem;
+    margin-left: 2rem;
+    text-decoration: none;
+    color: black;
+    font-family: 'Roboto', sans-serif;
+    transition: color 0.3s ease;
+}
+
+/*Estilização da fonte na navegação ao passar o mouse*/  
+  .nav-font:hover {
+    color: rgb(24, 170, 19);
+  }
+  
+  /* Estilo para o link ativo */
+  .active {
+    font-weight: bold; /* Pode ser qualquer outro estilo desejado */
+    border-bottom: 0.2rem solid green;
+  }
+  
+
