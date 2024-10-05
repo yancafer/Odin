@@ -8,12 +8,12 @@
 */
 
 .container {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    padding: 1.1rem ;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 1.1rem;
 }
 
 /**/
@@ -23,19 +23,22 @@
 - flex-direction: row; - para alinhar os itens em linha
 */
 .nav-container {
-    display: flex;
-    flex-direction: row;
+  display: flex;
+  flex-direction: row;
+  gap: 2rem;
 }
 
 /*Estilização das logos no menu
 - width: 18rem; - largura da imagem
 */
 .logo-sejusp {
-    width: 18rem;
+  width: 18rem;
+  margin-left: 2rem;
 }
 
 .logo-dirjusp {
-    width: 18rem;
+  width: 18rem;
+  margin-right: 2rem;
 }
 
 /*Estilização da fonte na navegação
@@ -47,29 +50,27 @@
 - transition: color 0.3s ease; - transição de cor ao passar o mouse
 */
 .nav-font {
-    font-size: 1.5rem;
-    margin-left: 2rem;
-    text-decoration: none;
-    color: black;
-    font-family: 'Roboto', sans-serif;
-    transition: color 0.3s ease;
+  font-size: 1.5rem;
+  margin-left: 2rem;
+  text-decoration: none;
+  color: black;
+  font-family: 'Roboto', sans-serif;
+  transition: color 0.3s ease;
 }
 
 /*Estilização da fonte na navegação ao passar o mouse
 - color: - cor da fonte ao passar o mouse
-*/  
-  .nav-font:hover {
-    color: rgb(24, 170, 19);
-  }
-  
-  /* Estilo para o link ativo 
+*/
+.nav-font:hover {
+  color: rgb(24, 170, 19);
+}
+
+/* Estilo para o link ativo 
   - font-weight: bold; - negrito
   - border-bottom: 0.2rem solid green; - borda inferior de 0.2rem sólida verde
   */
 
-  .active {
-    font-weight: bold;
-    border-bottom: 0.2rem solid green;
-  }
-  
-
+.active {
+  font-weight: bold;
+  border-bottom: 0.2rem solid green;
+}
