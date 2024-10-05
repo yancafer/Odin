@@ -1,0 +1,15 @@
+.container-footer {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 1rem;
+}
+
+.image-footer {
+  margin-left: 2rem;
+}
+
+.footer-text {
+  font-size: 0.9rem;
+  font-family: 'Roboto', sans-serif;
+}
