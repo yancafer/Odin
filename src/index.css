@@ -18,6 +18,7 @@ time, mark, audio, video {
 	font-size: 100%;
 	font: inherit;
 	vertical-align: baseline;
+	font-family: 'Roboto', sans-serif;
 }
 
 /* HTML5 display-role reset for older browsers */
@@ -56,12 +57,24 @@ ol, ul {
 	min-height: 100vh;
 }
 
+/*
+- flex: 1; faz com que o conteúdo cresça para ocupar o espaço disponível
+- padding: 20px; adiciona um espaçamento interno de 20px
+- box-sizing: border-box; faz com que o padding não aumente o tamanho do elemento
+*/
 .content {
-	flex: 1; /* Faz o conteúdo crescer para ocupar o espaço disponível */
+	flex: 1;
 	padding: 20px;
 	box-sizing: border-box;
 }
 
+/*
+- color: define a cor do texto
+- text-align: start; alinha o texto à esquerda
+- padding: 10px; adiciona um espaçamento interno de 10px
+- width: 100%; define a largura do elemento como 100%
+- box-shadow: adiciona uma sombra na parte inferior
+*/
 footer {
 	color: #000000;
 	text-align: start;
