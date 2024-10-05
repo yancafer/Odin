@@ -1,3 +1,9 @@
+/*
+- display: flex - para alinhar os itens
+- flex-direction: row - para alinhar os itens em linha
+- align-items: center - para alinhar os itens no centro
+- gap: 1rem - espaçamento entre os itens
+*/
 .container-footer {
   display: flex;
   flex-direction: row;
@@ -5,11 +11,16 @@
   gap: 1rem;
 }
 
+/*
+- margin-left: 2rem - margem a esquerda
+*/
 .image-footer {
   margin-left: 2rem;
 }
 
+/*
+- font-size: 0.9rem - tamanho da fonte
+*/
 .footer-text {
   font-size: 0.9rem;
-  font-family: 'Roboto', sans-serif;
 }
