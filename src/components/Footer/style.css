@@ -3,24 +3,104 @@
 - flex-direction: row - para alinhar os itens em linha
 - align-items: center - para alinhar os itens no centro
 - gap: 1rem - espaçamento entre os itens
+- Padding para evitar que o conteúdo fique colado nas bordas
+- Centraliza todos os itens
 */
 .container-footer {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  gap: 1rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 1rem;
+    padding: 1rem;
+    justify-content: center;
 }
 
 /*
-- margin-left: 2rem - margem a esquerda
+- margin-left: 2rem - margem à esquerda
+- Definindo a largura da imagem
+- Garante que a imagem não ultrapasse o contêiner
 */
 .image-footer {
-  margin-left: 2rem;
+    margin-left: 2rem;
+    width: 2rem;
+    max-width: 100%;
 }
 
 /*
 - font-size: 0.9rem - tamanho da fonte
 */
 .footer-text {
-  font-size: 0.9rem;
+    font-size: 0.9rem;
+    }
+    
+
+/* --------------------------Media queries para RESPONSIVIDADE -------------------------*/
+
+/* 
+- Para telas de até 600px (mobile)
+- Muda a direção para coluna no mobile
+- Centraliza o conteúdo verticalmente
+- Alinha o texto ao centro 
+*/
+
+@media (max-width: 600px) {
+    .container-footer {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .image-footer {
+        margin-left: 0;
+        /* Remove a margem à esquerda no mobile */
+        margin-bottom: 0.5rem;
+        /* Adiciona margem inferior para espaçamento */
+        width: 2rem;
+        /* Mantém a largura da imagem no mobile */
+    }
+
+    .footer-text {
+        font-size: 0.75rem;
+        /* Reduzindo o tamanho da fonte no mobile */
+    }
+}
+
+/* Para telas de até 768px (tablets e iPads) */
+@media (max-width: 768px) {
+    .container-footer {
+        flex-direction: row;
+        /* Mantém a direção em linha */
+        align-items: center;
+        /* Alinha os itens no centro */
+    }
+
+    .image-footer {
+        width: 2rem;
+        /* Mantendo a largura da imagem para tablets */
+    }
+
+    .footer-text {
+        font-size: 0.85rem;
+        /* Ajustando o tamanho da fonte para tablets */
+    }
+}
+
+/* Para telas maiores que 1200px (desktops e TVs 4K) */
+@media (min-width: 1200px) {
+    .container-footer {
+        justify-content: flex-start;
+        /* Alinha à esquerda em telas maiores */
+        gap: 2rem;
+        /* Aumentando o espaçamento entre os itens no footer */
+    }
+
+    .image-footer {
+        width: 2rem;
+        /* Mantendo a largura da imagem para telas maiores */
+    }
+
+    .footer-text {
+        font-size: 1rem;
+        /* Aumentando o tamanho da fonte para telas maiores */
+    }
 }

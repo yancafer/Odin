@@ -12,13 +12,12 @@
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
+  /* Mantém o espaço entre as logos e o menu */
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   padding: 1.1rem;
 }
 
-/**/
-
-/*Container de navegação para alinhar os itens
+/* Container de navegação para alinhar os itens
 - display: flex; - para alinhar os itens
 - flex-direction: row; - para alinhar os itens em linha
 */
@@ -26,37 +25,51 @@
   display: flex;
   flex-direction: row;
   gap: 2rem;
+  /* Espaçamento entre os links */
 }
 
-/*Estilização das logos no menu
-- width: 18rem; - largura da imagem
+/* Estilização das logos no menu
+- width: 16rem; - largura da imagem
 */
 .logo-sejusp {
-  width: 18rem;
-  margin-left: 2rem;
+  width: 12rem;
+  /* Ajustando para melhor responsividade */
+  max-width: 100%;
+  /* Garante que a imagem não ultrapasse o contêiner */
+  margin-left: 1.5rem;
+  /* Aumentando margem à esquerda para espaçamento */
+  margin-right: 1.5rem;
+  /* Aumentando margem à direita para espaçamento */
 }
 
 .logo-dirjusp {
-  width: 18rem;
-  margin-right: 2rem;
+  width: 12rem;
+  /* Ajustando para melhor responsividade */
+  max-width: 100%;
+  /* Garante que a imagem não ultrapasse o contêiner */
+  margin-left: 1.5rem;
+  /* Aumentando margem à esquerda para espaçamento */
+  margin-right: 1.5rem;
+  /* Aumentando margem à direita para espaçamento */
 }
 
-/*Estilização da fonte na navegação
-- font-size: 1.5rem; - tamanho da fonte
-- margin-left: 2rem; - margem a esquerda
+/* Estilização da fonte na navegação
+- font-size: 1.4rem; - tamanho da fonte
 - text-decoration: none; - sem decoração
 - color: - cor da fonte
 - transition: color 0.3s ease; - transição de cor ao passar o mouse
 */
 .nav-font {
-  font-size: 1.5rem;
-  margin-left: 2rem;
+  font-size: 1.4rem;
+  /* Ajustando o tamanho da fonte */
+  margin-left: 1rem;
+  /* Mantém a margem original */
   text-decoration: none;
   color: black;
   transition: color 0.3s ease;
 }
 
-/*Estilização da fonte na navegação ao passar o mouse
+/* Estilização da fonte na navegação ao passar o mouse
 - color: - cor da fonte ao passar o mouse
 */
 .nav-font:hover {
@@ -67,8 +80,97 @@
   - font-weight: bold; - negrito
   - border-bottom: 0.2rem solid green; - borda inferior de 0.2rem sólida verde
   */
-
 .active {
   font-weight: bold;
   border-bottom: 0.2rem solid green;
+}
+
+/* Media queries para responsividade */
+
+/* Para telas de até 600px (mobile) */
+@media (max-width: 600px) {
+  .container {
+    flex-direction: column;
+    /* Muda a direção para coluna no mobile */
+    align-items: center;
+    /* Centraliza o conteúdo verticalmente */
+  }
+
+  .nav-container {
+    flex-direction: row;
+    /* Mantém os links lado a lado */
+    justify-content: center;
+    /* Centraliza os links no menu */
+    gap: 1.5rem;
+    /* Ajuste do espaço entre os links */
+    margin-top: 1rem;
+    /* Margem superior para os links */
+  }
+
+  .logo-sejusp,
+  .logo-dirjusp {
+    display: none;
+    /* Ocultar as logos no mobile */
+  }
+
+  .nav-font {
+    font-size: 1.2rem;
+    /* Reduzindo o tamanho da fonte no mobile */
+    margin-left: 0;
+    /* Remover margem à esquerda */
+  }
+}
+
+/* Para telas de até 900px (iPad Mini e similares) */
+@media (max-width: 900px) {
+
+  .logo-sejusp,
+  .logo-dirjusp {
+    width: 12rem;
+    /* Ajustando a largura para não cortar */
+  }
+
+  .nav-font {
+    font-size: 1.4rem;
+    /* Ajustando o tamanho da fonte */
+  }
+}
+
+/* Para telas de até 1024px (iPad e tablets maiores) */
+@media (max-width: 1024px) {
+
+  .logo-sejusp,
+  .logo-dirjusp {
+    width: 10rem;
+    /* Diminuindo a largura para não cortar em iPads */
+    margin-left: 2rem;
+    /* Aumentando margem para espaçamento adicional */
+    margin-right: 2rem;
+    /* Aumentando margem para espaçamento adicional */
+  }
+
+  .nav-font {
+    font-size: 1.4rem;
+    /* Mantendo o tamanho da fonte ajustado */
+  }
+}
+
+/* Para telas maiores que 1200px (desktops e TVs 4K) */
+@media (min-width: 1200px) {
+
+  .logo-sejusp,
+  .logo-dirjusp {
+    width: 18rem;
+    /* Aumentando a largura para telas maiores */
+  }
+
+  .nav-font {
+    font-size: 1.6rem;
+    /* Aumentando o tamanho da fonte */
+  }
+
+  .nav-container {
+    gap: 6rem;
+    /* Aumentando o espaçamento entre os links no menu */
+  }
 }
