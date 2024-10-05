@@ -46,7 +46,6 @@
 - margin-left: 2rem; - margem a esquerda
 - text-decoration: none; - sem decoração
 - color: - cor da fonte
-- font-family: 'Roboto', sans-serif; - fonte da família Roboto
 - transition: color 0.3s ease; - transição de cor ao passar o mouse
 */
 .nav-font {
@@ -54,7 +53,6 @@
   margin-left: 2rem;
   text-decoration: none;
   color: black;
-  font-family: 'Roboto', sans-serif;
   transition: color 0.3s ease;
 }
 
